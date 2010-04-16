@@ -1,23 +1,46 @@
 #include <iostream>
 #include "ServerSocket.h"
 #include <stdlib.h>
+#include <string.h>
 using namespace std;
 
 long long TIME = 0;
-char * MEMO, * DISK,* PROCESS;
+char * MEMO, *DISK,*PROCESS;
 void init()
 {
-  string file_to_save,memo,disk,process;
+  int len_file_str = 0;
+  const char * memo1 = "echo ----------Memory---------- > ",
+    * memo2 = " && free -m >> ",
+    * disk1 = "echo ----------Disk Usage---------- >> ",
+    * disk2 = " && df -h >> ",
+    * process1 = "echo ----------Process---------- >> ",
+    * process2 = " && top -b -n 1 >> ";
+  char file_to_save[255];
   freopen("config.daemon","r",stdin);
-  cin >> file_to_save >> TIME;
+  scanf("%s %Ld", file_to_save, &TIME);
+  len_file_str = strlen(file_to_save);
+  TIME *= 1000000; /*To microseconds*/
 
-  memo = "echo ----------Memory---------- > "+file_to_save+" && free -m >> "+file_to_save;
-  disk = "echo ----------Disk Usage---------- >> "+file_to_save+" && df -h >> "+file_to_save;
-  process = "echo ----------Process---------- >> "+file_to_save+" && top -b -n 1 >> "+file_to_save;
+  MEMO = (char *)malloc( ( strlen(memo1) + 2*len_file_str + strlen(memo2) + 1)*sizeof(char));
+  strcpy(MEMO,memo1);
+  strcat(MEMO,file_to_save);
+  strcat(MEMO,memo2);
+  strcat(MEMO,file_to_save);
+  /*puts(MEMO);*/
 
-  MEMO = (char *) memo.c_str();
-  DISK = (char *) disk.c_str();
-  PROCESS = (char *) process.c_str();
+  DISK = (char *)malloc( ( strlen(disk1) + 2*len_file_str + strlen(disk2) + 1)*sizeof(char));
+  strcpy(DISK,disk1);
+  strcat(DISK,file_to_save);
+  strcat(DISK,disk2);
+  strcat(DISK,file_to_save);
+  /*puts(DISK);*/
+
+  PROCESS = (char *)malloc( ( strlen(process1) + 2*len_file_str + strlen(process2) + 1)*sizeof(char));
+  strcpy(PROCESS, process1);
+  strcat(PROCESS, file_to_save);
+  strcat(PROCESS, process2);
+  strcat(PROCESS, file_to_save);
+  /*puts(PROCESS);*/
 
 }
 int main (int argc, const char * argv[]){
@@ -30,7 +53,7 @@ int main (int argc, const char * argv[]){
       error = system(DISK);
       error = system(PROCESS);
       printf("%d\n", times++);
-      usleep(TIME*1000000);
+      usleep(TIME);
     }
 
   return 0;
