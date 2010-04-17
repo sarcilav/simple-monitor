@@ -18,18 +18,7 @@ ClientSocket::ClientSocket (string host, int port )
   Socket::set_non_blocking(true);
 }
 
-/*
-const ClientSocket& ClientSocket::operator << ( const string& s ) const
-{
-  if ( ! Socket::send ( s ) )
-    {
-      throw SocketException ( "Could not write to socket." );
-    }
 
-  return *this;
-
-}
-*/
 bool ClientSocket::operator << ( const string& s ) const
 {
 

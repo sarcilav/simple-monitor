@@ -1,254 +1,188 @@
 ----------Memory----------
              total       used       free     shared    buffers     cached
-Mem:          3013       1841       1172          0        139        743
--/+ buffers/cache:        958       2055
-Swap:         3067          0       3067
+Mem:          2768       1223       1544          0         53        416
+-/+ buffers/cache:        754       2014
+Swap:         8110          0       8110
 ----------Disk Usage----------
-S.ficheros            Tamaño Usado  Disp Uso% Montado en
-/dev/sda5             136G   48G   89G  35% /
-tmpfs                 1,5G     0  1,5G   0% /lib/init/rw
-varrun                1,5G  356K  1,5G   1% /var/run
-varlock               1,5G     0  1,5G   0% /var/lock
-udev                  1,5G  144K  1,5G   1% /dev
-tmpfs                 1,5G  296K  1,5G   1% /dev/shm
-lrm                   1,5G  2,2M  1,5G   1% /lib/modules/2.6.28-18-server/volatile
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1             286G   16G  256G   6% /
+udev                  1.4G  316K  1.4G   1% /dev
+none                  1.4G  1.7M  1.4G   1% /dev/shm
+none                  1.4G   88K  1.4G   1% /var/run
+none                  1.4G     0  1.4G   0% /var/lock
+none                  1.4G     0  1.4G   0% /lib/init/rw
 ----------Process----------
-top - 16:53:26 up 53 min,  5 users,  load average: 0.27, 0.49, 0.45
-Tasks: 231 total,   2 running, 191 sleeping,   0 stopped,  38 zombie
-Cpu(s): 16.5%us,  2.2%sy,  0.1%ni, 77.8%id,  3.3%wa,  0.1%hi,  0.0%si,  0.0%st
-Mem:   3086324k total,  1885412k used,  1200912k free,   142488k buffers
-Swap:  3140696k total,        0k used,  3140696k free,   761348k cached
+top - 02:05:33 up 30 min,  4 users,  load average: 0.10, 0.27, 0.19
+Tasks: 166 total,   3 running, 163 sleeping,   0 stopped,   0 zombie
+Cpu(s): 13.7%us,  3.5%sy,  0.0%ni, 81.3%id,  1.3%wa,  0.1%hi,  0.1%si,  0.0%st
+Mem:   2834756k total,  1252764k used,  1581992k free,    54576k buffers
+Swap:  8305564k total,        0k used,  8305564k free,   426172k cached
 
   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND            
- 4880 sebastia  20   0  786m 399m  34m R   16 13.2  13:40.10 firefox            
- 4118 sebastia  20   0  156m 5688 4348 S    2  0.2   0:37.48 pulseaudio         
- 9069 sebastia  20   0  2576 1160  824 R    2  0.0   0:00.02 top                
-    1 root      20   0  3084 1884  564 S    0  0.1   0:01.31 init               
-    2 root      15  -5     0    0    0 S    0  0.0   0:00.01 kthreadd           
+ 1628 root      20   0  233m 112m  31m R   25  4.1   2:39.80 Xorg               
+ 4293 sebastia  20   0  480m 170m  30m S   12  6.2   4:49.15 firefox            
+ 2378 sebastia  20   0  228m 6276 5044 S    2  0.2   0:52.67 pulseaudio         
+ 2532 sebastia  20   0 31248  22m 8072 S    2  0.8   0:11.24 compiz.real        
+ 2533 sebastia  20   0 42584  18m  13m S    2  0.7   0:05.56 gnome-panel        
+ 2612 sebastia  20   0 23256 9168 7272 S    2  0.3   0:07.03 multiload-apple    
+ 2636 sebastia  20   0 20576  10m 7776 S    2  0.4   0:02.22 gtk-window-deco    
+ 5088 sebastia  20   0  2468 1068  776 R    2  0.0   0:00.01 top                
+    1 root      20   0  2532 1528 1128 S    0  0.1   0:01.04 init               
+    2 root      15  -5     0    0    0 S    0  0.0   0:00.00 kthreadd           
     3 root      RT  -5     0    0    0 S    0  0.0   0:00.00 migration/0        
-    4 root      15  -5     0    0    0 S    0  0.0   0:00.18 ksoftirqd/0        
+    4 root      15  -5     0    0    0 S    0  0.0   0:00.08 ksoftirqd/0        
     5 root      RT  -5     0    0    0 S    0  0.0   0:00.00 watchdog/0         
     6 root      RT  -5     0    0    0 S    0  0.0   0:00.00 migration/1        
-    7 root      15  -5     0    0    0 S    0  0.0   0:00.40 ksoftirqd/1        
+    7 root      15  -5     0    0    0 S    0  0.0   0:00.29 ksoftirqd/1        
     8 root      RT  -5     0    0    0 S    0  0.0   0:00.00 watchdog/1         
     9 root      15  -5     0    0    0 S    0  0.0   0:00.04 events/0           
-   10 root      15  -5     0    0    0 S    0  0.0   0:00.02 events/1           
-   11 root      15  -5     0    0    0 S    0  0.0   0:00.00 khelper            
-   12 root      RT  -5     0    0    0 S    0  0.0   0:00.00 kstop/0            
-   13 root      RT  -5     0    0    0 S    0  0.0   0:00.00 kstop/1            
-   14 root      15  -5     0    0    0 S    0  0.0   0:00.00 kintegrityd/0      
-   15 root      15  -5     0    0    0 S    0  0.0   0:00.00 kintegrityd/1      
-   16 root      15  -5     0    0    0 S    0  0.0   0:00.00 kblockd/0          
-   17 root      15  -5     0    0    0 S    0  0.0   0:00.01 kblockd/1          
-   18 root      15  -5     0    0    0 S    0  0.0   0:00.00 kacpid             
-   19 root      15  -5     0    0    0 S    0  0.0   0:00.00 kacpi_notify       
-   20 root      15  -5     0    0    0 S    0  0.0   0:00.00 cqueue             
-   21 root      15  -5     0    0    0 S    0  0.0   0:00.51 ata/0              
-   22 root      15  -5     0    0    0 S    0  0.0   0:00.13 ata/1              
-   23 root      15  -5     0    0    0 S    0  0.0   0:00.00 ata_aux            
-   24 root      15  -5     0    0    0 S    0  0.0   0:00.01 ksuspend_usbd      
-   25 root      15  -5     0    0    0 S    0  0.0   0:00.01 khubd              
-   26 root      15  -5     0    0    0 S    0  0.0   0:00.00 kseriod            
-   27 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmmcd              
-   28 root      15  -5     0    0    0 S    0  0.0   0:00.00 btaddconn          
-   29 root      15  -5     0    0    0 S    0  0.0   0:00.00 btdelconn          
-   30 root      20   0     0    0    0 S    0  0.0   0:00.00 pdflush            
-   31 root      20   0     0    0    0 S    0  0.0   0:00.29 pdflush            
-   32 root      15  -5     0    0    0 S    0  0.0   0:00.00 kswapd0            
-   33 root      15  -5     0    0    0 S    0  0.0   0:00.00 aio/0              
-   34 root      15  -5     0    0    0 S    0  0.0   0:00.00 aio/1              
-   35 root      15  -5     0    0    0 S    0  0.0   0:00.00 ecryptfs-kthrea    
-   38 root      15  -5     0    0    0 S    0  0.0   0:00.00 scsi_eh_0          
-   39 root      15  -5     0    0    0 S    0  0.0   0:00.97 scsi_eh_1          
-   40 root      15  -5     0    0    0 S    0  0.0   0:00.01 scsi_eh_2          
-   41 root      15  -5     0    0    0 S    0  0.0   0:00.01 scsi_eh_3          
-   42 root      15  -5     0    0    0 S    0  0.0   0:00.00 kstriped           
-   43 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmpathd/0          
-   44 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmpathd/1          
-   45 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmpath_handlerd    
-   46 root      15  -5     0    0    0 S    0  0.0   0:00.00 ksnapd             
-   47 root      15  -5     0    0    0 S    0  0.0   0:00.00 kondemand/0        
-   48 root      15  -5     0    0    0 S    0  0.0   0:00.02 kondemand/1        
-   49 root      10 -10     0    0    0 S    0  0.0   0:00.00 krfcommd           
-  704 root      15  -5     0    0    0 S    0  0.0   0:00.02 reiserfs/0         
-  705 root      15  -5     0    0    0 S    0  0.0   0:00.00 reiserfs/1         
-  839 root      16  -4  2224  576  316 S    0  0.0   0:00.06 udevd              
- 1448 root      15  -5     0    0    0 S    0  0.0   0:00.00 kpsmoused          
- 2095 root      20   0  1808  532  460 S    0  0.0   0:00.00 getty              
- 2096 root      20   0  1808  528  460 S    0  0.0   0:00.00 getty              
- 2103 root      20   0  1808  532  460 S    0  0.0   0:00.00 getty              
- 2104 root      20   0  1808  532  460 S    0  0.0   0:00.00 getty              
- 2105 root      20   0  1808  528  460 S    0  0.0   0:00.00 getty              
- 2175 root      20   0  2204 1088  560 S    0  0.0   0:00.01 acpid              
- 2220 syslog    20   0  2040  724  564 S    0  0.0   0:00.08 syslogd            
- 2243 root      20   0  1968  532  440 S    0  0.0   0:00.06 dd                 
- 2245 klog      20   0  3728 2488  444 S    0  0.1   0:00.09 klogd              
- 2268 messageb  20   0  3024 1392  840 S    0  0.0   0:00.18 dbus-daemon        
- 2328 root      20   0  1872  548  464 S    0  0.0   0:00.00 mysqld_safe        
- 2370 mysql     20   0  124m  16m 5092 S    0  0.6   0:01.04 mysqld             
- 2371 root      20   0  1792  604  528 S    0  0.0   0:00.00 logger             
- 3008 Debian-e  20   0  6412  996  656 S    0  0.0   0:00.00 exim4              
- 3032 root      20   0 17448 2636 1792 S    0  0.1   0:00.13 console-kit-dae    
- 3111 jetty     20   0  409m  35m 7236 S    0  1.2   0:03.23 java               
- 3142 oracle    20   0 21732 5856 4304 S    0  0.2   0:00.03 tnslsnr            
- 3170 oracle    20   0  849m 9892 8548 S    0  0.3   0:00.34 oracle             
- 3172 oracle    20   0  849m 8468 7528 S    0  0.3   0:00.02 oracle             
- 3174 oracle    20   0  849m  23m  22m S    0  0.8   0:00.13 oracle             
- 3176 oracle    20   0  851m  16m  13m S    0  0.5   0:00.04 oracle             
- 3178 oracle    20   0  864m  12m  11m S    0  0.4   0:00.06 oracle             
- 3180 oracle    20   0  849m  13m  12m S    0  0.4   0:00.25 oracle             
- 3182 oracle    20   0  849m  43m  42m S    0  1.5   0:00.36 oracle             
- 3184 oracle    20   0  849m  13m  12m S    0  0.4   0:00.03 oracle             
- 3186 oracle    20   0  850m  21m  19m S    0  0.7   0:00.36 oracle             
- 3188 oracle    20   0  851m  42m  39m S    0  1.4   0:00.49 oracle             
- 3190 oracle    20   0  849m  13m  12m S    0  0.4   0:00.46 oracle             
- 3192 oracle    20   0  849m 8424 7048 S    0  0.3   0:00.02 oracle             
- 3194 oracle    20   0  849m 8240 7048 S    0  0.3   0:00.01 oracle             
- 3196 oracle    20   0  849m 8240 7052 S    0  0.3   0:00.01 oracle             
- 3198 oracle    20   0  849m 8236 7048 S    0  0.3   0:00.01 oracle             
- 3200 oracle    20   0  849m 8248 7060 S    0  0.3   0:00.01 oracle             
- 3221 oracle    20   0  849m 9612 8648 S    0  0.3   0:00.04 oracle             
- 3231 privoxy   20   0  2764  984  556 S    0  0.0   0:00.01 privoxy            
- 3256 root      20   0  7240 1672 1164 S    0  0.1   0:00.15 nmbd               
- 3260 root      20   0 13032 2912 2220 S    0  0.1   0:00.02 smbd               
- 3288 root      20   0 13032 1056  420 S    0  0.0   0:00.00 smbd               
- 3329 oracle    20   0  849m  10m 9692 S    0  0.3   0:00.01 oracle             
- 3330 root      20   0 10604 1476  940 S    0  0.0   0:00.00 winbindd           
- 3350 root      20   0 10604 1184  648 S    0  0.0   0:00.00 winbindd           
- 3351 haldaemo  20   0  6680 4436 3644 S    0  0.1   0:00.29 hald               
- 3352 root      20   0  3328 1112  920 S    0  0.0   0:00.00 hald-runner        
- 3381 root      20   0  5176 1788 1576 S    0  0.1   0:00.15 hald-addon-inpu    
- 3415 root      20   0  5180 1804 1592 S    0  0.1   0:01.24 hald-addon-stor    
- 3419 root      20   0  5188 1780 1572 S    0  0.1   0:00.01 hald-addon-cpuf    
- 3421 haldaemo  20   0  5032 1760 1540 S    0  0.1   0:00.00 hald-addon-acpi    
- 3433 root      20   0  3556 1560 1344 S    0  0.1   0:00.02 bluetoothd         
- 3466 root      20   0 15320 1912 1096 S    0  0.1   0:00.00 gdm                
- 3472 root      20   0 15904 3504 2532 S    0  0.1   0:00.07 gdm                
- 3488 root      20   0  489m  65m  15m S    0  2.2   2:52.09 Xorg               
- 3530 root      20   0  8080 2556 2068 S    0  0.1   0:00.02 NetworkManager     
- 3534 root      20   0  4280 1340 1108 S    0  0.0   0:00.00 wpa_supplicant     
- 3536 root      20   0  6948 3124 2592 S    0  0.1   0:00.05 nm-system-setti    
- 3554 avahi     20   0  2944 1508 1260 S    0  0.0   0:00.03 avahi-daemon       
- 3555 avahi     20   0  2944  508  300 S    0  0.0   0:00.00 avahi-daemon       
- 3582 root      20   0  6108 2396 1736 S    0  0.1   0:00.02 cupsd              
- 3610 root      20   0  4324 1160  932 S    0  0.0   0:00.00 system-tools-ba    
- 3683 daemon    20   0  2096  456  324 S    0  0.0   0:00.00 atd                
- 3713 root      20   0  3480 1036  824 S    0  0.0   0:00.02 cron               
- 3787 oracle    20   0  849m 8924 7916 S    0  0.3   0:00.02 oracle             
- 3788 root      20   0 21468 6052 3200 S    0  0.2   0:00.08 apache2            
- 3804 hobbit    20   0  1852  516  400 S    0  0.0   0:00.03 hobbitlaunch       
- 3819 hobbit    20   0  4644 1340  916 S    0  0.0   0:00.08 hobbitd            
- 3884 root      20   0  1808  528  460 S    0  0.0   0:00.00 getty              
- 3887 www-data  20   0 21468 4012 1084 S    0  0.1   0:00.00 apache2            
- 3888 www-data  20   0 21468 4012 1084 S    0  0.1   0:00.00 apache2            
- 3889 www-data  20   0 21468 4012 1084 S    0  0.1   0:00.00 apache2            
- 3890 www-data  20   0 21468 4012 1084 S    0  0.1   0:00.00 apache2            
- 3891 www-data  20   0 21468 4012 1084 S    0  0.1   0:00.00 apache2            
- 3955 hobbit    20   0  2112  496  416 S    0  0.0   0:00.00 hobbitd_channel    
- 3956 hobbit    20   0  2368  644  492 S    0  0.0   0:00.01 hobbitd_channel    
- 3957 hobbit    20   0  2112  476  408 S    0  0.0   0:00.00 hobbitd_channel    
- 3958 hobbit    20   0  2112  516  424 S    0  0.0   0:00.00 hobbitd_channel    
- 3959 hobbit    20   0  2112  480  408 S    0  0.0   0:00.00 hobbitd_channel    
- 3960 hobbit    20   0  2368  668  504 S    0  0.0   0:00.01 hobbitd_channel    
- 3966 hobbit    20   0  2120  656  536 S    0  0.0   0:00.00 hobbitd_history    
- 3967 hobbit    20   0  2364  580  416 S    0  0.0   0:00.00 hobbitd_hostdat    
- 3968 hobbit    20   0  2368  652  516 S    0  0.0   0:00.00 hobbitd_alert      
- 3969 hobbit    20   0  9432 2308 1468 S    0  0.1   0:00.08 hobbitd_rrd        
- 3970 hobbit    20   0  9432 2004 1508 S    0  0.1   0:00.00 hobbitd_rrd        
- 3971 hobbit    20   0  2652 1360  620 S    0  0.0   0:00.03 hobbitd_client     
- 3997 www-data  20   0 21468 4008 1084 S    0  0.1   0:00.00 apache2            
- 4003 sebastia  20   0 26008 3676 2936 S    0  0.1   0:00.06 gnome-keyring-d    
- 4015 sebastia  20   0 28272 8744 6716 S    0  0.3   0:00.16 x-session-manag    
- 4109 sebastia  20   0  4784  608  288 S    0  0.0   0:00.01 ssh-agent          
- 4112 sebastia  20   0  3144  696  456 S    0  0.0   0:00.00 dbus-launch        
- 4113 sebastia  20   0  3068 1296  652 S    0  0.0   0:00.14 dbus-daemon        
- 4119 sebastia  20   0  7844 2620 2112 S    0  0.1   0:00.01 gconf-helper       
- 4121 sebastia  20   0  8056 4780 2268 S    0  0.2   0:00.45 gconfd-2           
- 4133 sebastia  20   0 20952 8108 5756 S    0  0.3   0:00.07 seahorse-agent     
- 4151 sebastia  20   0 14252 4648 3688 S    0  0.2   0:03.72 at-spi-registry    
- 4152 sebastia  20   0 32336  11m 8864 S    0  0.4   0:02.18 gnome-settings-    
- 4154 sebastia  20   0 41960 3604 2744 S    0  0.1   0:00.17 bonobo-activati    
- 4158 sebastia  20   0  5688 2160 1844 S    0  0.1   0:00.00 gvfsd              
- 4167 sebastia  20   0 30608 2404 1924 S    0  0.1   0:00.17 gvfs-fuse-daemo    
- 4173 sebastia  20   0  1872  560  468 S    0  0.0   0:00.01 compiz             
- 4231 sebastia  20   0 27504  18m 6748 S    0  0.6   0:09.34 compiz.real        
- 4232 sebastia  20   0 41076  22m  15m S    0  0.7   0:02.43 gnome-panel        
- 4233 sebastia  20   0 60944  23m  15m S    0  0.8   0:01.70 nautilus           
- 4235 sebastia  20   0  8184 3668 2924 S    0  0.1   0:00.01 gvfs-hal-volume    
- 4237 sebastia  20   0  8356 3096 2332 S    0  0.1   0:00.03 gvfs-gphoto2-vo    
- 4238 sebastia  20   0  1872  512  448 S    0  0.0   0:00.00 gnome-do           
- 4252 sebastia  20   0 18392 8604 6888 S    0  0.3   0:00.05 bluetooth-apple    
- 4254 sebastia  20   0 64964  35m  19m S    0  1.2   0:36.36 gnome-do           
- 4255 sebastia  20   0 30116  15m 9108 S    0  0.5   0:00.26 python             
- 4258 sebastia  20   0 61620  12m  10m S    0  0.4   0:00.12 evolution-alarm    
- 4264 sebastia  20   0 25572  13m 9088 S    0  0.5   0:00.30 nm-applet          
- 4265 sebastia  20   0 32284  17m  12m S    0  0.6   0:00.36 update-notifier    
- 4267 sebastia  20   0 27204  10m 7280 S    0  0.3   0:00.13 gnome-power-man    
- 4271 sebastia  20   0 23756  10m 8212 S    0  0.3   0:12.06 multiload-apple    
- 4274 sebastia  20   0 46916  16m  11m S    0  0.6   0:01.81 mixer_applet2      
- 4277 sebastia  20   0 28580  15m  10m S    0  0.5   0:00.33 indicator-apple    
- 4282 sebastia  20   0 19612 9476 7336 S    0  0.3   0:00.06 notify-osd         
- 4289 sebastia  20   0  6308 2968 2436 S    0  0.1   0:00.03 gvfsd-trash        
- 4298 sebastia  20   0  1872  500  432 S    0  0.0   0:00.00 sh                 
- 4299 sebastia  20   0  1872  528  448 S    0  0.0   0:00.00 compiz-decorato    
- 4301 sebastia  20   0 23072  12m 9336 S    0  0.4   0:03.63 gtk-window-deco    
- 4308 sebastia  20   0  5820 2320 2004 S    0  0.1   0:00.02 gvfsd-burn         
- 4364 sebastia  20   0 18340 3484 1816 S    0  0.1   0:01.69 gnome-screensav    
- 4377 sebastia  20   0 79384 9052 6988 S    0  0.3   0:00.05 evolution-data-    
- 4382 sebastia  20   0 36980  12m 9864 S    0  0.4   0:00.08 evolution-excha    
- 4878 root      20   0  2276  656  528 S    0  0.0   0:00.00 dhclient           
- 4890 sebastia  20   0 97660  30m  20m S    0  1.0   0:01.86 pidgin             
- 5003 avahi-au  20   0  2072  824  684 S    0  0.0   0:00.01 avahi-autoipd      
- 5004 root      20   0  1844  388  308 S    0  0.0   0:00.00 avahi-autoipd      
- 5223 sebastia  20   0  1872  496  432 S    0  0.0   0:00.00 sh                 
- 5224 sebastia  20   0 39500  18m  11m S    0  0.6   0:14.07 gnome-terminal     
- 5225 sebastia  20   0  2036  704  580 S    0  0.0   0:00.00 gnome-pty-helpe    
- 5226 sebastia  20   0  6796 4056 1516 S    0  0.1   0:00.59 bash               
- 5974 sebastia  20   0 19576  14m 5120 S    0  0.5   0:07.71 emacs              
- 6603 sebastia  20   0  6796 4040 1504 S    0  0.1   0:00.18 bash               
- 7669 sebastia  20   0  6852 4068 1472 S    0  0.1   0:00.18 bash               
- 8054 sebastia  20   0  2900  792  684 S    0  0.0   0:00.02 agent              
- 8055 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8064 sebastia  20   0  6796 4032 1492 S    0  0.1   0:00.21 bash               
- 8171 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8178 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8200 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8240 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8247 sebastia  20   0     0    0    0 Z    0  0.0   0:00.01 agent <defunct>    
- 8254 sebastia  20   0     0    0    0 Z    0  0.0   0:00.01 agent <defunct>    
- 8261 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8295 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8302 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8309 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8316 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8323 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8332 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8340 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8347 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8357 sebastia  20   0     0    0    0 Z    0  0.0   0:00.01 agent <defunct>    
- 8378 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8385 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8392 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8401 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8408 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8415 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8422 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8429 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8436 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8443 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8450 sebastia  20   0     0    0    0 Z    0  0.0   0:00.01 agent <defunct>    
- 8457 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8464 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8471 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8478 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8531 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8538 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8545 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8552 sebastia  20   0     0    0    0 Z    0  0.0   0:00.01 agent <defunct>    
- 8559 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 8566 sebastia  20   0     0    0    0 Z    0  0.0   0:00.00 agent <defunct>    
- 9011 hobbit    20   0  1876  512  440 S    0  0.0   0:00.01 sh                 
- 9013 hobbit    20   0  1944  624  524 S    0  0.0   0:00.00 vmstat             
- 9063 sebastia  20   0  3032  520  340 S    0  0.0   0:00.00 agent              
- 9068 sebastia  20   0  1872  512  444 S    0  0.0   0:00.01 sh                 
+   10 root      15  -5     0    0    0 S    0  0.0   0:00.09 events/1           
+   11 root      15  -5     0    0    0 S    0  0.0   0:00.00 cpuset             
+   12 root      15  -5     0    0    0 S    0  0.0   0:00.00 khelper            
+   13 root      15  -5     0    0    0 S    0  0.0   0:00.00 netns              
+   14 root      15  -5     0    0    0 S    0  0.0   0:00.00 async/mgr          
+   15 root      15  -5     0    0    0 S    0  0.0   0:00.00 kintegrityd/0      
+   16 root      15  -5     0    0    0 S    0  0.0   0:00.00 kintegrityd/1      
+   17 root      15  -5     0    0    0 S    0  0.0   0:00.00 kblockd/0          
+   18 root      15  -5     0    0    0 S    0  0.0   0:00.00 kblockd/1          
+   19 root      15  -5     0    0    0 S    0  0.0   0:00.00 kacpid             
+   20 root      15  -5     0    0    0 S    0  0.0   0:00.00 kacpi_notify       
+   21 root      15  -5     0    0    0 S    0  0.0   0:00.00 kacpi_hotplug      
+   22 root      15  -5     0    0    0 S    0  0.0   0:00.00 ata/0              
+   23 root      15  -5     0    0    0 S    0  0.0   0:00.00 ata/1              
+   24 root      15  -5     0    0    0 S    0  0.0   0:00.00 ata_aux            
+   25 root      15  -5     0    0    0 S    0  0.0   0:00.00 ksuspend_usbd      
+   26 root      15  -5     0    0    0 S    0  0.0   0:00.03 khubd              
+   27 root      15  -5     0    0    0 S    0  0.0   0:00.10 kseriod            
+   28 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmmcd              
+   29 root      15  -5     0    0    0 S    0  0.0   0:00.00 bluetooth          
+   30 root      20   0     0    0    0 S    0  0.0   0:00.00 khungtaskd         
+   31 root      20   0     0    0    0 S    0  0.0   0:00.00 pdflush            
+   32 root      20   0     0    0    0 S    0  0.0   0:00.02 pdflush            
+   33 root      15  -5     0    0    0 S    0  0.0   0:00.00 kswapd0            
+   34 root      15  -5     0    0    0 S    0  0.0   0:00.00 aio/0              
+   35 root      15  -5     0    0    0 S    0  0.0   0:00.00 aio/1              
+   36 root      15  -5     0    0    0 S    0  0.0   0:00.00 ecryptfs-kthrea    
+   37 root      15  -5     0    0    0 S    0  0.0   0:00.00 crypto/0           
+   38 root      15  -5     0    0    0 S    0  0.0   0:00.00 crypto/1           
+   42 root      15  -5     0    0    0 S    0  0.0   0:00.00 scsi_eh_0          
+   43 root      15  -5     0    0    0 S    0  0.0   0:00.34 scsi_eh_1          
+   44 root      15  -5     0    0    0 S    0  0.0   0:00.00 scsi_eh_2          
+   47 root      15  -5     0    0    0 S    0  0.0   0:00.00 kstriped           
+   48 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmpathd/0          
+   49 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmpathd/1          
+   50 root      15  -5     0    0    0 S    0  0.0   0:00.00 kmpath_handlerd    
+   51 root      15  -5     0    0    0 S    0  0.0   0:00.00 ksnapd             
+   52 root      15  -5     0    0    0 R    0  0.0   0:00.03 kondemand/0        
+   53 root      15  -5     0    0    0 S    0  0.0   0:00.15 kondemand/1        
+   54 root      15  -5     0    0    0 S    0  0.0   0:00.00 kconservative/0    
+   55 root      15  -5     0    0    0 S    0  0.0   0:00.00 kconservative/1    
+   56 root      10 -10     0    0    0 S    0  0.0   0:00.00 krfcommd           
+  428 root      15  -5     0    0    0 S    0  0.0   0:00.11 kjournald2         
+  429 root      15  -5     0    0    0 S    0  0.0   0:00.00 ext4-dio-unwrit    
+  430 root      15  -5     0    0    0 S    0  0.0   0:00.00 ext4-dio-unwrit    
+  489 root      20   0  2284  824  576 S    0  0.0   0:00.04 upstart-udev-br    
+  491 root      16  -4  2884 1264  296 S    0  0.0   0:00.03 udevd              
+  718 root      18  -2  2880 1240  276 S    0  0.0   0:00.00 udevd              
+  720 root      18  -2  2880 1188  220 S    0  0.0   0:00.00 udevd              
+  779 root      15  -5     0    0    0 S    0  0.0   0:00.00 kpsmoused          
+  820 root      15  -5     0    0    0 S    0  0.0   0:00.00 hd-audio0          
+  843 root      15  -5     0    0    0 S    0  0.0   0:00.00 hd-audio1          
+  870 root      20   0  1852  552  456 S    0  0.0   0:00.05 dd                 
+  872 syslog    20   0 34444 1452  996 S    0  0.1   0:00.05 rsyslogd           
+  877 messageb  20   0  3168 1520  748 S    0  0.1   0:00.43 dbus-daemon        
+  883 haldaemo  20   0  6244 4104 3352 S    0  0.1   0:00.19 hald               
+  888 root      20   0 20436 2988 2128 S    0  0.1   0:00.05 console-kit-dae    
+  951 root      20   0  3344 1224  984 S    0  0.0   0:00.00 hald-runner        
+  954 root      20   0 18556 3920 3264 S    0  0.1   0:00.35 NetworkManager     
+  959 avahi     20   0  2824 1516 1248 S    0  0.1   0:00.02 avahi-daemon       
+  968 avahi     20   0  2824  532  316 S    0  0.0   0:00.00 avahi-daemon       
+  969 root      20   0  3908 2144 1724 S    0  0.1   0:00.04 modem-manager      
+  998 root      20   0  4784 2268 1924 S    0  0.1   0:00.13 wpa_supplicant     
+ 1096 root      20   0  3416 1116  956 S    0  0.0   0:00.00 hald-addon-rfki    
+ 1111 root      20   0  3412 1136  980 S    0  0.0   0:00.00 hald-addon-gene    
+ 1112 root      20   0  3416 1116  952 S    0  0.0   0:00.00 hald-addon-leds    
+ 1130 root      20   0  3428 1124  964 S    0  0.0   0:00.00 hald-addon-cpuf    
+ 1133 haldaemo  20   0  3264 1136  960 S    0  0.0   0:00.00 hald-addon-acpi    
+ 1140 root      20   0  3420 1156  980 S    0  0.0   0:00.36 hald-addon-inpu    
+ 1147 root      20   0  3420 1140  972 S    0  0.0   0:00.27 hald-addon-stor    
+ 1148 root      20   0  1704  548  468 S    0  0.0   0:00.00 getty              
+ 1151 root      20   0  1704  548  468 S    0  0.0   0:00.00 getty              
+ 1156 root      20   0  1704  548  468 S    0  0.0   0:00.00 getty              
+ 1157 root      20   0  1704  548  468 S    0  0.0   0:00.00 getty              
+ 1159 root      20   0  1704  548  468 S    0  0.0   0:00.00 getty              
+ 1163 root      20   0  1976  880  492 S    0  0.0   0:00.00 acpid              
+ 1167 root      20   0  1896  816  680 S    0  0.0   0:00.00 anacron            
+ 1168 daemon    20   0  1964  420  292 S    0  0.0   0:00.00 atd                
+ 1169 root      20   0  2092  872  692 S    0  0.0   0:00.00 cron               
+ 1367 root      18  -2  3520 1668 1456 S    0  0.1   0:00.01 bluetoothd         
+ 1417 root      20   0  4588 1484  924 S    0  0.1   0:00.04 atieventsd         
+ 1450 root      20   0  8592 3320 2724 S    0  0.1   0:00.02 gdm-binary         
+ 1463 root      20   0  6692 2464 1836 S    0  0.1   0:00.00 cupsd              
+ 1613 root      20   0  8528 3464 2836 S    0  0.1   0:00.01 gdm-simple-slav    
+ 1652 root      20   0  1704  548  468 S    0  0.0   0:00.00 getty              
+ 1671 root      15  -5     0    0    0 S    0  0.0   0:00.00 firegl             
+ 1745 gdm       20   0  3384  720  460 S    0  0.0   0:00.00 dbus-launch        
+ 1750 root      20   0  5156 2540 2024 S    0  0.1   0:00.02 devkit-power-da    
+ 2122 root      20   0  8636 3008 2432 S    0  0.1   0:00.06 gdm-session-wor    
+ 2311 sebastia  20   0 40708 3508 2852 S    0  0.1   0:00.01 gnome-keyring-d    
+ 2326 sebastia  20   0 25528 6732 5220 S    0  0.2   0:00.11 gnome-session      
+ 2370 sebastia  20   0  4712  604  280 S    0  0.0   0:00.00 ssh-agent          
+ 2373 sebastia  20   0  3384  712  452 S    0  0.0   0:00.00 dbus-launch        
+ 2374 sebastia  20   0  3096 1284  592 S    0  0.0   0:00.18 dbus-daemon        
+ 2399 sebastia  20   0 10636 2912 2320 S    0  0.1   0:00.00 gconf-helper       
+ 2401 sebastia  20   0  7640 4636 2164 S    0  0.2   0:01.23 gconfd-2           
+ 2410 sebastia  20   0  103m  13m 9936 S    0  0.5   0:02.27 gnome-settings-    
+ 2413 sebastia  20   0 22472 7484 5320 S    0  0.3   0:00.11 seahorse-daemon    
+ 2415 sebastia  20   0  5748 2164 1820 S    0  0.1   0:00.01 gvfsd              
+ 2420 sebastia  20   0 29796 2488 1980 S    0  0.1   0:00.00 gvfs-fuse-daemo    
+ 2428 sebastia  20   0 28976  12m 9228 S    0  0.5   0:03.87 notify-osd         
+ 2436 sebastia  20   0  1752  556  456 S    0  0.0   0:00.00 compiz             
+ 2522 sebastia  20   0  3168  916  732 S    0  0.0   0:00.60 syndaemon          
+ 2548 sebastia  20   0 85752  25m  15m S    0  0.9   0:03.00 nautilus           
+ 2553 sebastia  20   0 41652 3452 2636 S    0  0.1   0:00.05 bonobo-activati    
+ 2561 sebastia  20   0  6368 2872 2348 S    0  0.1   0:00.01 gvfs-gdu-volume    
+ 2564 sebastia  20   0 30352  10m 8092 S    0  0.4   0:00.17 trashapplet        
+ 2565 root      20   0  4948 2524 2116 S    0  0.1   0:00.04 devkit-disks-da    
+ 2566 root      20   0  4828  716  468 S    0  0.0   0:00.00 devkit-disks-da    
+ 2567 sebastia  20   0 17696 7600 6048 S    0  0.3   0:00.11 gnome-power-man    
+ 2568 sebastia  20   0 94752  11m 8840 S    0  0.4   0:00.30 gnome-volume-co    
+ 2569 sebastia  20   0 29580  14m 8156 S    0  0.5   0:00.29 python             
+ 2571 sebastia  20   0 26080 9980 7316 S    0  0.4   0:00.17 bluetooth-apple    
+ 2573 sebastia  20   0  6600 2208 1796 S    0  0.1   0:00.00 gvfs-gphoto2-vo    
+ 2575 sebastia  20   0 27812  11m 8900 S    0  0.4   0:00.28 update-notifier    
+ 2579 sebastia  20   0  6188 2828 2348 S    0  0.1   0:00.01 gvfsd-trash        
+ 2581 sebastia  20   0 34564  10m 8584 S    0  0.4   0:00.13 evolution-alarm    
+ 2586 sebastia  20   0 17576 6996 5528 S    0  0.2   0:00.05 gdu-notificatio    
+ 2587 sebastia  20   0 16692 5788 4540 S    0  0.2   0:00.03 polkit-gnome-au    
+ 2588 sebastia  20   0 34780  12m 8732 S    0  0.4   0:00.70 nm-applet          
+ 2593 root      20   0  5824 3508 2740 S    0  0.1   0:00.03 polkitd            
+ 2594 sebastia  20   0 17444 2968 1528 S    0  0.1   0:00.02 gnome-screensav    
+ 2600 sebastia  20   0 32404  13m 9.9m S    0  0.5   0:00.19 indicator-apple    
+ 2602 sebastia  20   0 31272  11m 8892 S    0  0.4   0:00.17 indicator-apple    
+ 2635 sebastia  20   0  1752  480  416 S    0  0.0   0:00.00 sh                 
+ 2647 sebastia  20   0  6900 2664 2256 S    0  0.1   0:00.01 indicator-sessi    
+ 2648 sebastia  20   0  6332 2108 1788 S    0  0.1   0:00.00 indicator-users    
+ 2649 sebastia  20   0 11956 3160 2592 S    0  0.1   0:00.00 indicator-statu    
+ 2651 sebastia  20   0  8164 3452 2716 S    0  0.1   0:00.07 indicator-messa    
+ 2694 sebastia  20   0  5748 2244 1924 S    0  0.1   0:00.00 gvfsd-burn         
+ 3037 sebastia  20   0  1752  480  416 S    0  0.0   0:00.00 sh                 
+ 3038 sebastia  20   0 39680  14m  10m S    0  0.5   0:16.68 gnome-terminal     
+ 3039 sebastia  20   0  1904  716  580 S    0  0.0   0:00.00 gnome-pty-helpe    
+ 3156 root      20   0  2144  980  852 S    0  0.0   0:00.00 dhclient           
+ 4271 root      20   0  1752  484  416 S    0  0.0   0:00.00 sh                 
+ 4272 root      20   0  1752  528  452 S    0  0.0   0:00.00 authatieventsd.    
+ 4364 root      20   0  1752  492  420 S    0  0.0   0:00.00 sh                 
+ 4365 root      30  10  1668  552  416 S    0  0.0   0:00.00 run-parts          
+ 4371 root      30  10  1752  548  456 S    0  0.0   0:00.00 apt                
+ 4401 root      30  10  1688  440  376 S    0  0.0   0:00.00 sleep              
+ 4406 sebastia  20   0  6672 3952 1520 S    0  0.1   0:00.23 bash               
+ 4498 sebastia  20   0  115m  12m 5728 S    0  0.4   0:37.17 mplayer            
+ 4518 sebastia  20   0  6668 3924 1492 S    0  0.1   0:00.15 bash               
+ 4547 sebastia  20   0  2500 1312  956 S    0  0.0   0:19.65 htop               
+ 4600 sebastia  20   0  6672 3964 1532 S    0  0.1   0:00.23 bash               
+ 4678 sebastia  20   0 43040  23m  12m S    0  0.9   0:07.16 emacs              
+ 4924 sebastia  20   0  2848  820  716 S    0  0.0   0:00.00 agent              
+ 5082 sebastia  20   0  2980  528  352 S    0  0.0   0:00.00 agent              
+ 5087 sebastia  20   0  1752  500  428 S    0  0.0   0:00.00 sh                 
 
