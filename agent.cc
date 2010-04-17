@@ -42,9 +42,11 @@ int main (){
             {
 	      new_socket << buffer;
             }
+          fclose(input);
           new_socket.~ServerSocket();
 	  free(buffer);
           exit(0);
+
         }
       else
 	{
